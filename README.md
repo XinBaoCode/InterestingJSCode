@@ -12,5 +12,5 @@
 
 * 演示效果如下:
 
-   ![GIF 2022-4-22 14-07-03](https://shanghai-putuo-markdown.oss-cn-shanghai.aliyuncs.com/img/GIF 2022-4-22 14-07-03.gif)
+    ![matrix动图](./image/matrix.gif)
 
