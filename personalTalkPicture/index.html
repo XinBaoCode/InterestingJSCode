@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <title>Matrix</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+  </head>
+
+  <body style="margin: 0">
+    <!-- 要将父布局的position设置为relative，父布局将无法包裹input -->
+    <div style="display: flex">
+      <div class="fa">
+        <input
+          id="upload-input"
+          class="input-img"
+          type="file"
+          accept="image/gif, image/jpg, image/png"
+          onchange="showImg(this)"
+        />
+
+        <!-- 自定义按钮效果 -->
+        <div class="input-real">
+          <img
+            id="upload"
+            src="https://img.88icon.com/download/jpg/20200805/a010e8fb1c25d44a28fc0f7070e8a5c1_512_512.jpg!88con"
+          />
+        </div>
+      </div>
+      <textarea
+        placeholder="左边上传图片，这里输入文字描述，右边会生成结果图像"
+      ></textarea>
+      <canvas id="canvas"></canvas>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
