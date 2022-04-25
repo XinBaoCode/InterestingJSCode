@@ -1,10 +1,15 @@
 <html>
   <head>
     <title>Matrix</title>
+    <script
+      type="text/javascript"
+      src="http://html2canvas.hertzen.com/dist/html2canvas.min.js"
+    ></script>
+
     <link rel="stylesheet" type="text/css" href="index.css" />
   </head>
 
-  <body style="margin: 0">
+  <body style="margin-top: 20px">
     <!-- 要将父布局的position设置为relative，父布局将无法包裹input -->
     <div style="display: flex">
       <div class="fa">
@@ -27,8 +32,14 @@
       <textarea
         placeholder="左边上传图片，这里输入文字描述，右边会生成结果图像"
       ></textarea>
-      <canvas id="canvas"></canvas>
+      <div class="result">
+        <img id="result_src" src="" />
+        <div class="result_text">
+          我们诞生在这个世界是被迫的，这是最糟糕的事实。一种理想主义的人生观是：生命的长度无需受制于肉体自然的衰败，它应该是受你的心灵、你的快乐的需要而去自主选择。每个人都没有绝对的道德底线，只是诱惑不够。也没有任何一个人能经受得住集体的道德审判。我们要学会宽容，像谅解自己一样谅解别人。
+        </div>
+      </div>
     </div>
+    <button onclick="download()">下载</button>
     <script src="index.js"></script>
   </body>
 </html>

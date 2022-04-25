@@ -45,6 +45,32 @@ textarea:focus{
   box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
 }
 
-canvas{
-  height: 300;
+.result{
+  margin-left:50px;
+  height: 300px;
+  width:800px;
+  border: 1px solid #ccc; 
+  border-radius: 10px;
+  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+  display: flex;
+}
+
+.result img{
+  margin-top:15px;
+  margin-left:15px;
+  height: 270px;
+  border:none;
+  border-radius: 10px;
+}
+
+.result_text{
+  display: flex;
+  align-items: center;/*垂直居中*/
+  margin-left:8px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 23px;
+  color:#4e4e4e;
+  margin-top:15px;
+  height: 270px;
+  overflow: hidden;
 }
